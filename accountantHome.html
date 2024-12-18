@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accountant User Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+        }
+        select, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        .results {
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome, Accountant User</h1>
+        <form action="Accountant" method="post">
+            <label for="reportOption">Select a Report:</label><br>
+            <select id="reportOption" name="reportOption">
+                <option value="1">Report 1: Supplier Details</option>
+                <option value="2">Report 2: Part Details</option>
+                <option value="3">Report 3: Shipment Details</option>
+                <option value="4">Report 4: Jobs Summary</option>
+                <option value="5">Report 5: Custom Analysis</option>
+            </select><br>
+            <button type="submit">Run Report</button>
+        </form>
+        <div class="results">
+            <h2>Results:</h2>
+            <p>Results will be displayed here after running a report.</p>
+        </div>
+    </div>
+</body>
+</html>
