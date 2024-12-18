@@ -1,0 +1,54 @@
+<!-- /* Name:Andres Albornoz
+Course: CNT 4714 – Fall 2024 – Project Four
+Assignment title: A Three-Tier Distributed Web-Based Application
+Date: December 1, 2024
+*/ -->
+<web-app>
+    <!-- Application Name -->
+    <display-name>Project4</display-name>
+
+    <!-- Authentication Servlet -->
+    <servlet>
+        <servlet-name>AuthenticationServlet</servlet-name>
+        <servlet-class>AuthenticationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AuthenticationServlet</servlet-name>
+        <url-pattern>/Authenticate</url-pattern>
+    </servlet-mapping>
+
+    <!-- Root User Servlet -->
+    <servlet>
+        <servlet-name>RootServlet</servlet-name>
+        <servlet-class>RootServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RootServlet</servlet-name>
+        <url-pattern>/Root</url-pattern>
+    </servlet-mapping>
+
+    <!-- Client User Servlet -->
+    <servlet>
+        <servlet-name>ClientServlet</servlet-name>
+        <servlet-class>ClientServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ClientServlet</servlet-name>
+        <url-pattern>/Client</url-pattern>
+    </servlet-mapping>
+
+    <!-- Accountant User Servlet -->
+    <servlet>
+        <servlet-name>AccountantServlet</servlet-name>
+        <servlet-class>AccountantServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AccountantServlet</servlet-name>
+        <url-pattern>/Accountant</url-pattern>
+    </servlet-mapping>
+
+    <!-- Welcome Page -->
+    <welcome-file-list>
+        <welcome-file>authenticate.html</welcome-file>
+    </welcome-file-list>
+</web-app>
